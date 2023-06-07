@@ -12,9 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.title{
+  min-width: 80px;
+}
+ 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,11 +26,114 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+ 
 .App-link {
   color: #61dafb;
 }
+.my_button{
+     display: flex;
+  justify-content: center;
+}
+.message2{
+font-size: small;
+font-weight: bold;
+color: red;
+}
+.message{
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+.message button{
+    border: none;
+  color:  rgb(38, 175, 238);
+  position: absolute;
+  right: 50px;
+  top :360px;
+  background-color: #ffffff;
+  font-size: medium;
+  
+}
+td {
+  width: 30px;
+  height: 10px;
+  border: 1px solid   rgb(168, 164, 164);/* 添加黑色边框 */
+  cursor: pointer; /* 设置鼠标样式为手型 */
+}
+.status-icon{
+  width: auto;
+}
+td.selected {
+  background-color: rgb(38, 175, 238); /* 设置选中状态的背景颜色为蓝色 */
+}
+.calendar {
+  display: inline-block; /* 让表格宽度根据内容自适应 */
+  margin: auto;
+  padding: 50px;
+ 
+}
+.message1{
+ 
+  border: .8px solid rgb(168, 164, 164);
+}
+.calendar-table {
 
+  border-collapse: collapse; /* 合并表格边框 */
+  table-layout: fixed; /* 固定表格布局 */
+  
+}
+
+.calendar-table th,
+.calendar-table td {
+  border: .8px solid rgb(168, 164, 164); /* 设置格子边框为黑色 */
+  text-align: center; /* 居中显示格子内容 */
+  height: 30px; /* 设置格子高度为30px */
+  padding: 0; /* 清除格子内边距 */
+  margin: 0; /* 清除格子外边距 */
+}
+
+.calendar-table th {
+  background-color: #ffffff; /* 设置表头背景色 */
+ /* 设置表头文字加粗 */
+}
+
+.calendar-table td {
+  width: 50px; /* 设置格子宽度为50px */
+  cursor: pointer; /* 添加鼠标指针样式，表示可以点击 */
+}
+
+.calendar-table td.selected {
+  background-color:  rgb(38, 175, 238); ; /* 设置选中格子的背景色为黄色 */
+}
+
+.selected-slots {
+  margin-top: 10px;
+ /* 添加选中格子显示区域与表格的间距 */
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
+
+.slot {
+  display: inline-block; /* 让选中格子显示在同一行 */
+  padding: 5px; /* 添加选中格子之间的间距 */
+}
+
+button {
+   margin: 10px;  /* 添加按钮与表格的间距 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px 8px 16px;
+  gap: 8px;
+  height: 40px;
+  width: 128px;
+  border: none;
+  background: #056bfa27;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
